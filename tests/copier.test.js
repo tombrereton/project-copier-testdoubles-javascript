@@ -3,7 +3,7 @@ import * as destination from "../src/destination"
 import * as source from "../src/source"
 
 
-test("copies one char from source to destination", () => {
+test("should copy one char from source to destination", () => {
     // create mock functions
     destination.setChar = jest.fn();
     // create stub for getChar
@@ -17,7 +17,7 @@ test("copies one char from source to destination", () => {
     expect(destination.setChar).toHaveBeenCalledWith('a');
 });
 
-test("copies two chars from source to destination", () => {
+test("should copy two chars from source to destination", () => {
     // create mock functions
     destination.setChar = jest.fn();
     // create stub for getChar
@@ -34,7 +34,7 @@ test("copies two chars from source to destination", () => {
     expect(destination.setChar).toHaveBeenCalledWith('b');
 });
 
-test("copies three chars from source to destination and terminate copy on newline", () => {
+test("should copy three chars from source to destination and terminate copy on newline", () => {
     // create mock functions
     destination.setChar = jest.fn();
     // create stub for getChar
