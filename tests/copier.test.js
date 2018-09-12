@@ -3,6 +3,10 @@ import * as destination from "../src/destination"
 import * as source from "../src/source"
 
 
+// see the docs below to read more about mocking functions with jest
+// https://jestjs.io/docs/en/mock-functions
+
+
 test("should copy one char from source to destination", () => {
     // create mock functions
     destination.setChar = jest.fn();
