@@ -3,7 +3,11 @@ import * as source from "./source"
 
 function copy() {
     let charFromSource = source.getChar()
-    destination.setChar(charFromSource)
+    while (charFromSource !== "\n") {
+        destination.setChar(charFromSource)
+
+        charFromSource = source.getChar()
+    }
 }
 
 export default copy
