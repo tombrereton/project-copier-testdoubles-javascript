@@ -3,7 +3,7 @@ import * as destination from "../src/destination"
 import * as source from "../src/source"
 
 
-test("copied one char from source to destination", () => {
+test("copier copies one char from source to destination", () => {
     // create mock functions
     destination.setChar = jest.fn();
     // create stub for getChar
